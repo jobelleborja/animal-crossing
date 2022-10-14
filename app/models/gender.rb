@@ -1,4 +1,5 @@
 class Gender < ApplicationRecord
-  :has_many:villagers
-  validates
+  has_many :villagers
+
+  validates :title, presence: true
 end
