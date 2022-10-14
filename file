@@ -1,0 +1,23 @@
+[33mcommit 48f5e9bbb47d07ad398e2d8e10b543db10f3644e[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: Jobelle Borja <jobelleborja@DESKTOP-TIDNMRV.localdomain>
+Date:   Fri Oct 14 09:55:58 2022 -0500
+
+    Seed file successfully ran.
+
+[33mcommit 659ac677a871c9e31f9fb64ef9b1af38c8996f67[m
+Author: Jobelle Borja <jobelleborja@DESKTOP-TIDNMRV.localdomain>
+Date:   Thu Oct 13 23:21:40 2022 -0500
+
+    Migrate Gender table.
+
+[33mcommit 5ca9a78ec29cf6f31892bcad72f983349b20b65f[m
+Author: Jobelle Borja <jobelleborja@DESKTOP-TIDNMRV.localdomain>
+Date:   Thu Oct 13 22:41:54 2022 -0500
+
+    Gender model created.
+
+[33mcommit 39635f6bc68ff3525c74dad3a197a7a739f528bf[m
+Author: Jobelle Borja <jobelleborja@DESKTOP-TIDNMRV.localdomain>
+Date:   Thu Oct 13 22:37:26 2022 -0500
+
+    First model created.
