@@ -9,28 +9,20 @@ require "open-uri"
 Villager.destroy_all
 Gender.destroy_all
 
-villagers = JSON.parse(URI.open("http://acnhapi.com/v1/villagers").read)
+villagers = JSON.parse(URI.open("http://acnhapi.com/v1a/villagers").read)
 
-# puts villagers
-
+# puts villagers["wol12"]["id"]
+i = 0;
 villagers.each do |villager|
-gender = Gender.find_or_create_by(title: villager[0]["gender"])
-#   v = Villager.new
-# #  v.id = villager["id"]
-#   v.name = villager["name"]["name-USen"]
-#   v.saying = villager["saying"]
-#   v.save
-if gender && gender.valid?
-
-  #create a movie
-  create_villager= gender.villagers.create(
-    id: villager["id"],
-    name: villager["name"]["name-USen"],
-    saying: villager["saying"]
-  )
-  # puts "INVALID movie #{m['original_title']}" unless villager&.valid?
-  puts "#{v.name}"
-end
+  if i < 100
+    gender = Gender.find_or_create_by(title: villager["gender"])
+      create_villager= gender.villagers.create(
+        id: villager["id"],
+        title: villager["name"]["name-USen"],
+        body: villager["saying"]
+      )
+      i+=1
+  end
 end
 
 
