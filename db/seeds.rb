@@ -11,9 +11,12 @@ Villagers.destroy_all
 villagers = JSON.parse(URI.open("https://acnhapi.com/v1a/").read)
 
 villagers.each do |villagers|
+  gender = Gender.find_or_create_by(name: category_name)
   v = Villagers.new
   v.id = villagers["id"]
   v.name = villagers["name"]["name-USen"]
   v.saying = villagers["saying"]
   v.save
 end
+
+
