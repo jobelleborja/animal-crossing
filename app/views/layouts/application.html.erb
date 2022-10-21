@@ -15,10 +15,11 @@
   <p>Here's a guide on the ACNH family!</p>
 </div>
 <nav>
+  <a href="/">Home</a>
   <a href="/about">About</a>
 </nav>
 <%= form_with(url: search_villagers_path, method: :get, local: true) do %>
-  <%= label_tag("Which Villager Would You Like to Find?:")%>
+  <p>Which Villager Would You Like To Find?</p>
   <%= text_field_tag(:words, nil, class: "input", placeholder: "Villager Name Here!") %>
   <%= submit_tag("Search", class: "button is-primary") %>
 <% end %>
