@@ -2,6 +2,5 @@
 <ol>
 <% @villagers.each do |villager|%>
 <li><%= link_to villager.title, villager%> is a villager.</li>
-<ul><%= link_to villager.title, villager%> loves to say <%= link_to villager.body, villager%>.</ul>
 <% end %>
 </ol>

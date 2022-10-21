@@ -1,0 +1,13 @@
+<h1><%= @villager.title %></h1>
+
+<p>
+  Villager ID: <%= link_to villager.id, villager%>
+  Name: <%= link_to villager.title, villager%>
+  Saying: <%= link_to villager.body, villager%>
+  Gender: <%= link_to gender.type, villager%>
+
+</p>
+
+<p>
+  <%= @villager.description %>
+</p>
