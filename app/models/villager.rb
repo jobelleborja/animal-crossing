@@ -6,7 +6,7 @@ class Villager < ApplicationRecord
 
 def self.search(search)
   if search
-    villager_name = Villager.find_by(name: villager)
+    villagers_name = Villager.find_by(name: villagers)
     if search
       self.where(id: villager)
     else

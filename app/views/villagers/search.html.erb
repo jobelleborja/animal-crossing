@@ -1,0 +1,6 @@
+<h2>Here are your results:</h2>
+<ol>
+<% @villagers.each do |villager|%>
+<li><%= link_to villager.title, villager%> is a villager.</li>
+<% end %>
+</ol>
