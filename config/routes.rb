@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   root "villagers#index"
 
   get "/villagers", to: "villagers#index"
+  get "/about", to: "about#index"
   resources :villagers, only: [:index, :show] do
     collection do
       get "search"
