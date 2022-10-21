@@ -14,6 +14,11 @@
   <h1>Animal Crossing Villagers</h1>
   <p>Here's a guide on the ACNH family!</p>
 </div>
+    <%=form_tag villager_index_path :method=> "get" do %>
+      <%= label_tag(:search, "Which Villager Would You Like to Find?:")%>
+      <%= text_field_tag :search, params[:search]%>
+      <%= submit_tag("Search", :name => nil)%>
+    <%end%>
     <%= yield %>
   </body>
 </html>
